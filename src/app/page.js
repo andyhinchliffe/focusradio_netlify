@@ -47,7 +47,7 @@ const Page = () => {
     <div className="bg-[url('/retro_radio.jpg')] sm:bg-contain  bg-center bg-no-repeat h-screen bg grid grid-cols-2">
     <div></div>
     <div className="font-semibold text-5xl sm:text-7xl flex items-center mr-2 text-slate-800 ml-10">
-    <div>{!isOpen? <div>FOCUS BEATS</div> : null}<div className="text-base mr-4">{!isOpen? <div>24 Hour Focus Beats - Click to Listen</div> : null}</div>
+    <div>{!isOpen? <div>FOCUS BEATS</div> : null}<div className="text-base mr-4">{!isOpen? <div>24 Hour Boom Bap Focus Beats - Click to Listen</div> : null}</div>
     
     
     <div className="flex">
