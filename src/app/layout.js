@@ -1,5 +1,6 @@
 import SpaceMono from "next/font/google";
 import "./globals.css";
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 // const inter = Inter({ subsets: ["latin"] });
 
@@ -12,15 +13,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+      <GoogleTagManager gtmId="G-9WX4Z085HD" />
       
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-9WX4Z085HD"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'G-9WX4Z085HD');
-        </script>
+        
         <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
