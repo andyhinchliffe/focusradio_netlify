@@ -1,6 +1,7 @@
 import SpaceMono from "next/font/google";
 import "./globals.css";
 import { GoogleTagManager } from '@next/third-parties/google'
+import Script from 'next/script'
 
 // const inter = Inter({ subsets: ["latin"] });
 
@@ -14,6 +15,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
       <GoogleTagManager gtmId="G-9WX4Z085HD" />
+      <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7586404911891787"
+     crossOrigin="anonymous"></Script>
       
         
         <link
@@ -22,6 +25,7 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body style={{ fontFamily: "Bebas Neue, sans-serif" }}>
+      
         {children}
       </body>
     </html>
