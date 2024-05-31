@@ -17,6 +17,7 @@ export default function RootLayout({ children }) {
       <GoogleTagManager gtmId="G-9WX4Z085HD" />
       <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7586404911891787"
      crossOrigin="anonymous"></Script>
+     <meta name="google-adsense-account" content="ca-pub-7586404911891787"></meta>
       
         
         <link
