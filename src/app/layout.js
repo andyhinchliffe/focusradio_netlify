@@ -4,8 +4,8 @@ import "./globals.css";
 // const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Background Music",
-  description: "Background Music",
+  title: "Focus Radio",
+  description: "24 Hour Boom Bap Focus Beats",
 };
 
 export default function RootLayout({ children }) {
