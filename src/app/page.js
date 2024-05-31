@@ -1,7 +1,9 @@
 "use client";
 import React from 'react'
+import Link from 'next/link'
 import AudioPlayer from 'react-h5-audio-player';
 import 'react-h5-audio-player/lib/styles.css';
+import { IoMdInformationCircleOutline } from "react-icons/io";
 
 import { useState } from 'react';
 
@@ -31,7 +33,7 @@ const Page = () => {
       
       
 
-      const ranNum = Math.floor(Math.random() * 9+1);
+      const ranNum = Math.floor(Math.random() * 24+1);
       setPath(`./audio/lofi128/track${ranNum}.mp3`);
       console.log(path);
       console.log(hour)
@@ -45,9 +47,10 @@ const Page = () => {
   return (<>
   <div className="sm:bg-[#9a9488] bg-[#d3caab]">
     <div className="bg-[url('/retro_radio.jpg')] sm:bg-contain  bg-center bg-no-repeat h-screen bg grid grid-cols-2">
-    <div></div>
+    <div><div className="text-[#b4996e] text-xl font-bold absolute top-5 left-5 "><Link href="/info"><IoMdInformationCircleOutline /></Link></div></div>
     <div className="font-semibold text-5xl sm:text-7xl flex items-center mr-2 text-slate-800 ml-10">
-    <div>{!isOpen? <div>FOCUS BEATS</div> : null}<div className="text-base mr-4">{!isOpen? <div>24 Hour Boom Bap Focus Beats - Click to Listen</div> : null}</div>
+    
+    <div>{!isOpen? <div>FOCUS RADIO</div> : null}<div className="text-base mr-4">{!isOpen? <div>24 Hour Boom Bap Focus Beats - Click to Listen</div> : null}</div>
     
     
     <div className="flex">
@@ -58,9 +61,11 @@ const Page = () => {
     <div className="dropdown dropdown-hover">
   <div tabIndex={0} role="button" className=" text-sm text-[#b4996e]">Current Show - {currentShow}</div>
   
+  
   <ul tabIndex={0} className="dropdown-content z-[1] menu p-1 shadow bg-[#d3caab] text-[#b4996e] rounded-box w-52 text-sm">
     {/* <li> Up Next - The Beats Show</li> */}
     <li ><a onClick={() => setIsOpen(!isOpen)}>{isOpen? "Close" : "Full Show Times"}</a></li>
+    
   </ul>
   </div>{isOpen? <div className="overflow-x-auto">
   <table className="table-sm text-slate-800 table mt-10">
@@ -143,10 +148,13 @@ const Page = () => {
       
     </tbody>
   </table>
-</div>:null}</div>
+</div>:null}
 </div>
-        
+
+</div>
     
+        
+        
     </div>
     
     </div>
