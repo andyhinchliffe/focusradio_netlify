@@ -50,7 +50,7 @@ const Page = () => {
     <div><div className="text-[#b4996e] text-xl font-bold absolute top-5 left-5 "><Link href="/info"><IoMdInformationCircleOutline /></Link></div></div>
     <div className="font-semibold text-5xl sm:text-7xl flex items-center mr-2 text-slate-800 ml-10">
     
-    <div>{!isOpen? <div>FOCUS BEATS</div> : null}<div className="text-base mr-4">{!isOpen? <div>24 Hour Boom Bap Focus Beats - Click to Listen</div> : null}</div>
+    <div>{!isOpen? <div>FOCUS RADIO</div> : null}<div className="text-base mr-4">{!isOpen? <div>24 Hour Boom Bap Focus Beats - Click to Listen</div> : null}</div>
     
     
     <div className="flex">
