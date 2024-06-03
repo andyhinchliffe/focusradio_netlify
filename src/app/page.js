@@ -17,6 +17,29 @@ const Page = () => {
   const [root, setRoot] = useState(`./audio/lofi128/`);
   const [currentShow, setCurrentShow] = useState("loading");
 
+  const [blogInfo, setBlogInfo] = useState([]);
+const [isLoaded, setIsLoaded] = useState(false);
+
+  // fetch('https://develop.dailyoperation.uk/focusmusic/wp-json/wp/v2/posts?_embed&per_page=10')
+  // .then(response => {
+  //   if (!response.ok) {
+  //     throw new Error('Network response was not ok');
+  //   }
+  //   return response.json();
+  // })
+  // .then(data => {
+  //   // Work with the received post data
+  //   setBlogInfo(data)
+  //   setIsLoaded(true);
+    
+    
+    
+    
+  // })
+  // .catch(error => {
+  //   console.error('There was a problem with the fetch operation:', error);
+  // });
+
     const nextTrack = () => {
       const time = new Date();
       const hour = time.getHours();
@@ -47,7 +70,14 @@ const Page = () => {
   return (<>
   <div className="sm:bg-[#9a9488] bg-[#d3caab]">
     <div className="bg-[url('/retro_radio.jpg')] sm:bg-contain  bg-center bg-no-repeat h-screen bg grid grid-cols-2">
-    <div><div className="text-[#b4996e] text-xl font-bold absolute top-5 left-5 "><Link href="/info"><IoMdInformationCircleOutline /></Link></div></div>
+    <div>
+    {/* <div className="text-black text-xl font-bold absolute top-5 left-5 "><Link href="/info"><IoMdInformationCircleOutline /></Link></div> */}
+    <div className="tooltip tooltip-closed tooltip-right" data-tip="click for more information">
+    <Link href="#faq">
+  <button className="btn btn-ghost bg-[#9a9488] text-xl font-bold"><IoMdInformationCircleOutline /></button>
+  </Link>
+</div>
+    </div>
     <div className="font-semibold text-5xl sm:text-7xl flex items-center mr-2 text-slate-800 ml-10">
     
     <div>{!isOpen? <div>FOCUS RADIO</div> : null}<div className="text-base mr-4">{!isOpen? <div>24 Hour Boom Bap Focus Beats - Click to Listen</div> : null}</div>
@@ -158,6 +188,128 @@ const Page = () => {
     </div>
     
     </div>
+    <div className='bg-[#9a9488] '>
+        <h1 id="faq" className="pt-6 text-center text-slate-800 text-xl font-bold">Focus Radio FAQ</h1>
+     <div className="mx-auto pt-6 sm:w-2/3">
+     <div className="collapse bg-[#fbf9e6] shadow-xl m-2">
+  <input type="radio" name="my-accordion-1"  /> 
+  <div className="collapse-title text-xl   font-medium">
+    What Is Focus Radio
+  </div>
+  <div className="collapse-content"> 
+    <p>Focus Radio helps you stay productive by minimizing distractions. Listening to low-tempo, vocal-free lofi music has consistently been proven to help people block out daily distractions and concentrate on their tasks. This site curates beats and playlists designed to be the perfect soundtrack for your workday (or night), supporting your work-life balance every single day. New tracks are added daily to ensure you remain focused and avoid getting too absorbed in familiar patterns and sounds you have heard before on your last listen.</p>
+  </div>
+</div>
+<div className="collapse bg-[#fbf9e6] shadow-xl m-2">
+  <input type="radio" name="my-accordion-1" /> 
+  <div className="collapse-title text-xl font-medium">
+    The Team
+  </div>
+  <div className="collapse-content"> 
+    <p>Our team is made up of DJs music professionals and of course music fans, each one curates the very best beats to their own taste to make up the show.  Every beat has been selected to work with our sound and have a great feel. It has taken years of listening and buying records to build up a powerful team of tastemakers and playlist builders. In the coming months, we plan to give more information and features on our team members along with mixes curated by them and for you, gradually building the focus radio network.</p>
+  </div>
+</div>
+<div className="collapse bg-[#fbf9e6] shadow-xl m-2">
+  <input type="radio" name="my-accordion-1" /> 
+  <div className="collapse-title text-xl font-medium">
+    Submit Your Music
+  </div>
+  <div className="collapse-content"> 
+    <p>It is easy to submit your music to us just send a link to hello@focusradio.uk . Make sure these tracks fit out the remit of Lofi book bap sounds and also make sure they are 100% percent original, we do not want our listeners having to pay expensive licenses to enjoy our music. The best links for us are SoundCloud or the equivalent, please do not send us mp3 files or WAVs as they will not get through to our listeners as they are big.</p>
+  </div>
+</div>
+
+
+
+     </div>
+
+     <div className="pt-6">
+     <h1 className="pb-6 text-center text-xl font-bold">The ultimate guide to focus Music</h1>
+    
+    
+    <div className="mt-4">
+    <div className="mx-auto card w-96 md:w-2/3 bg-[#fbf9e6] shadow-xl">
+    <div className="card-body">
+      <h2 className="card-title">Enhance Your Productivity with Focus Music</h2>
+      <p>Ever get stuck watching the first 30 seconds of YouTube videos to find you have just wasted the best part of the morning, well it is so easy to do. That is why we decided to make playlists of our favorite beats to focus our minds and attention on our work. But sadly this takes time, and I mean a lot of time! So the next option was to get on YouTube and listen to one of the numerous channels promising to keep us focussed but in the time it takes to settle into a lofi-focused state the next advert appears completely side-tracking our thoughts and train of communication. To help us beat this never-ending cycle is focus radio, made solely of beats you can focus on. </p>
+      <div className="card-actions justify-end">
+        
+      </div>
+    </div>
+    </div>
+    </div>
+
+    {/* -------------------POST CODE
+
+    <div className="mt-4">
+    <div className="mx-auto card w-96 md:w-2/3 bg-[#fbf9e6] shadow-xl">
+    <div className="card-body">
+      <h2 className="card-title">TITLE</h2>
+      <p>CONTENT</p>
+      <div className="card-actions justify-end">
+        
+      </div>
+    </div>
+    </div>
+    </div>
+
+    ---------------------END POST CODE */}
+
+    {/* -------------------POST CODE
+
+    <div className="mt-4">
+    <div className="mx-auto card w-96 md:w-2/3 bg-[#fbf9e6] shadow-xl">
+    <div className="card-body">
+      <h2 className="card-title">TITLE</h2>
+      <p>CONTENT</p>
+      <div className="card-actions justify-end">
+        
+      </div>
+    </div>
+    </div>
+    </div>
+
+    ---------------------END POST CODE */}
+
+    {/* -------------------POST CODE
+
+    <div className="mt-4">
+    <div className="mx-auto card w-96 md:w-2/3 bg-[#fbf9e6] shadow-xl">
+    <div className="card-body">
+      <h2 className="card-title">TITLE</h2>
+      <p>CONTENT</p>
+      <div className="card-actions justify-end">
+        
+      </div>
+    </div>
+    </div>
+    </div>
+
+    ---------------------END POST CODE */}
+
+    {/* -------------------POST CODE
+
+    <div className="mt-4">
+    <div className="mx-auto card w-96 md:w-2/3 bg-[#fbf9e6] shadow-xl">
+    <div className="card-body">
+      <h2 className="card-title">TITLE</h2>
+      <p>CONTENT</p>
+      <div className="card-actions justify-end">
+        
+      </div>
+    </div>
+    </div>
+    </div>
+
+    ---------------------END POST CODE */}
+    
+    
+
+
+            
+  </div>
+    </div>
+
     
 
 
