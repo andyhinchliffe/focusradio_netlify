@@ -239,13 +239,13 @@ const [isLoaded, setIsLoaded] = useState(false);
     </div>
     </div>
 
-    {/* -------------------POST CODE
+    {/* -------------------POST CODE */}
 
     <div className="mt-4">
     <div className="mx-auto card w-96 md:w-2/3 bg-[#fbf9e6] shadow-xl">
     <div className="card-body">
-      <h2 className="card-title">TITLE</h2>
-      <p>CONTENT</p>
+      <h2 className="card-title">BBC sounds focus beats</h2>
+      <p>Let's be honest we love focus beats and it really does set the standard for what we do here in the UK. So how have we made what we do different? Well first up our beats are all coordinated to play sounds you like and may have heard before but never in the same order so each show is different. The issue will relax and listening to focus beats in a set recorded order over and over means gradually you start to recognise the tracks, this is not a bad thing in itself but losing focus becomes more of an issue as your mind wanders to the recorded show streamed. Our system means every show is unique and built by our team of playlist curators and style tastemakers. Sticking to the traditional style of changing radio shows and music taste building a playlist that works for each style is used as a quality control plus adds some humanizing to the feel and sound of each show. All that said we have nothing but great things to say about BBC focus beats and we all love it we just feel there is more space in the market for new models for the world to use, to keep their focus! Our framework and system are continually adding fresh new music to keep your daily work focus at its absolute maximum and work with you to work towards your goals and achievement on a daily basis. Having said that just listening for pleasure can happen too.</p>
       <div className="card-actions justify-end">
         
       </div>
@@ -253,7 +253,7 @@ const [isLoaded, setIsLoaded] = useState(false);
     </div>
     </div>
 
-    ---------------------END POST CODE */}
+    {/* ---------------------END POST CODE */}
 
     {/* -------------------POST CODE
 
