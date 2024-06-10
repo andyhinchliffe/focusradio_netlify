@@ -255,13 +255,13 @@ const [isLoaded, setIsLoaded] = useState(false);
 
     {/* ---------------------END POST CODE */}
 
-    {/* -------------------POST CODE
+    
 
     <div className="mt-4">
     <div className="mx-auto card w-96 md:w-2/3 bg-[#fbf9e6] shadow-xl">
     <div className="card-body">
-      <h2 className="card-title">TITLE</h2>
-      <p>CONTENT</p>
+      <h2 className="card-title">lo fi hip hop chillhop lo fi ambient focus beats chill music to stream study game to</h2>
+      <p>Focus beats from focus radio are designed and inspired by the world of gaming, there is nothing better after a long day than getting lost in another world and game to whisk you away to another planet, time, or dimension. Just use focus beats and focus radio to really help you focus and direct all your attention to this exciting new world. Just a half hour (or even half a day!) in the world of focus beats and your favorite game is incredibly helpful to destress and leave the weight of the world behind. The same can be said for using focus beats to study and work to, it can help still mind wander and loss of focus which we know can be an issue with the outside world and daily distractions that come with daily life!</p>
       <div className="card-actions justify-end">
         
       </div>
@@ -269,7 +269,7 @@ const [isLoaded, setIsLoaded] = useState(false);
     </div>
     </div>
 
-    ---------------------END POST CODE */}
+   
 
     {/* -------------------POST CODE
 
