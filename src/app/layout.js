@@ -1,6 +1,6 @@
 import SpaceMono from "next/font/google";
 import "./globals.css";
-import { GoogleTagManager } from '@next/third-parties/google'
+// import { GoogleTagManager } from '@next/third-parties/google'
 import Script from 'next/script'
 
 // const inter = Inter({ subsets: ["latin"] });
@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-      <GoogleTagManager gtmId="G-9WX4Z085HD" />
+      {/* <GoogleTagManager gtmId="G-9WX4Z085HD" /> */}
       {/* <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7586404911891787"
      crossOrigin="anonymous"></Script> */}
      <meta name="google-adsense-account" content="ca-pub-7586404911891787"></meta>

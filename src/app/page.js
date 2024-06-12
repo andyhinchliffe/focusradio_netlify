@@ -3,6 +3,7 @@ import React from 'react'
 import Link from 'next/link'
 import AudioPlayer from 'react-h5-audio-player';
 import 'react-h5-audio-player/lib/styles.css';
+import { GoogleTagManager } from '@next/third-parties/google'
 import { IoMdInformationCircleOutline } from "react-icons/io";
 
 import { useState } from 'react';
@@ -69,6 +70,7 @@ const [isLoaded, setIsLoaded] = useState(false);
 
   return (<>
   <div className="sm:bg-[#9a9488] bg-[#d3caab]">
+  <GoogleTagManager gtmId="G-9WX4Z085HD" />
     <div className="bg-[url('/retro_radio.jpg')] sm:bg-contain  bg-center bg-no-repeat h-screen bg grid grid-cols-2">
     <div>
     {/* <div className="text-black text-xl font-bold absolute top-5 left-5 "><Link href="/info"><IoMdInformationCircleOutline /></Link></div> */}
