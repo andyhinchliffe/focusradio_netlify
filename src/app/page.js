@@ -70,7 +70,7 @@ const [isLoaded, setIsLoaded] = useState(false);
 
   return (<>
   <div className="sm:bg-[#9a9488] bg-[#d3caab]">
-  <GoogleTagManager gtmId="G-9WX4Z085HD" />
+  <GoogleTagManager gtmId="G-K7SSN3HFSE" />
     <div className="bg-[url('/retro_radio.jpg')] sm:bg-contain  bg-center bg-no-repeat h-screen bg grid grid-cols-2">
     <div>
     {/* <div className="text-black text-xl font-bold absolute top-5 left-5 "><Link href="/info"><IoMdInformationCircleOutline /></Link></div> */}
