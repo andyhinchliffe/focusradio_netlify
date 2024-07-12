@@ -2,26 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-.rhap_main-controls-button {
-    margin: 0 3px;
-    color: #df8346;
-    font-size: 35px;
-    width: 35px;
-    height: 35px;
-  }
+body{
+    background-color: #0f172a;
+};
 
-  .rhap_container {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    line-height: 1;
-    font-family: inherit;
-    width: 100%;
-    padding: 10px 15px;
-    background-color: #d7ccae;
-    
-  }
 
-  html {
-    scroll-behavior: smooth;
-  }
