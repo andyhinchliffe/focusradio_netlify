@@ -37,7 +37,7 @@ export default function Home() {
   
 
   useEffect(() => {
-    fetch('https://develop.dailyoperation.uk/streaming/wp-json/wp/v2/posts?_embed&per_page=6', {
+    fetch('https://develop.dailyoperation.uk/streaming/wp-json/wp/v2/posts?_embed&per_page=16', {
       method: 'GET',
     })
   .then(response => {
@@ -175,8 +175,76 @@ export default function Home() {
   return (<>
   
   <div>
-<p className='text-3xl pt-4 pl-4 font-semibold text-gray-400'>Focus Radio</p>
-<p className='pl-4 text-gray-400'>Focus beats</p>
+
+
+   <div className='flex'>
+<p className=' text-3xl pt-2 pl-4 font-semibold text-gray-400'>Focus Radio</p> 
+  
+
+<div className="ml-10 ">
+
+   {/* Open the modal using document.getElementById('ID').showModal() method */}
+   <button className="btn text-2xl bg-slate-900 text-gray-500 border-slate-900" onClick={()=>document.getElementById('my_modal_1').showModal()}><FaHome /></button>
+
+</div>
+
+   {/* Open the modal using document.getElementById('ID').showModal() method */}
+   <button className="btn text-2xl bg-slate-900 text-gray-500 border-slate-900" onClick={()=>document.getElementById('my_modal_2').showModal()}><FaList fa-3/></button>
+<dialog id="my_modal_2" className="modal">
+  <div className="modal-box">
+    <h3 className="font-bold text-lg">Playlist</h3>
+    <p className="py-4">Playlist feature coming soon.</p>
+    <div className="modal-action">
+      <form method="dialog">
+        {/* if there is a button in form, it will close the modal */}
+        <button className="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+
+ {/* Open the modal using document.getElementById('ID').showModal() method */}
+ <button className="btn text-2xl bg-slate-900 text-gray-500 border-slate-900" onClick={()=>document.getElementById('my_modal_3').showModal()}><CiSearch/></button>
+<dialog id="my_modal_3" className="modal">
+  <div className="modal-box">
+    <h3 className="font-bold text-lg">Search</h3>
+    <p className="py-4">Search feature coming soon.</p>
+    <div className="modal-action">
+      <form method="dialog">
+        {/* if there is a button in form, it will close the modal */}
+        <button className="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+
+ {/* Open the modal using document.getElementById('ID').showModal() method */}
+ <button className="btn text-2xl bg-slate-900 text-gray-500 border-slate-900" onClick={()=>document.getElementById('my_modal_4').showModal()}><CiCircleInfo /></button>
+<dialog id="my_modal_4" className="modal">
+  <div className="modal-box">
+    <h3 className="font-bold text-lg">Info</h3>
+    <p className="py-4">More info coming soon</p>
+    <div className="modal-action">
+      <form method="dialog">
+        {/* if there is a button in form, it will close the modal */}
+        <button className="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+
+
+
+
+</div>
+
+
+
+<p className='pl-4   text-gray-400'>Lo-fi Boom Bap Focus Beats</p>
+
+
+
+
 
 
 
@@ -270,10 +338,10 @@ export default function Home() {
 </div>
   </div>
 
-  <div class="sticky  inset-x-0 bottom-0 ">
+  <div className="sticky  inset-x-0 bottom-0 ">
     <a href="#" class="flex items-center gap-2 bg-slate-900 p-4 ">
       
-
+      
       <div className='bg-slate-900'>
         <p class="text-xs">
           <strong className="block text-gray-400 font-medium">Focus Radio</strong>
@@ -331,7 +399,7 @@ export default function Home() {
   
   <div className=" pl-4 card-body bg-slate-500 rounded-xl">
   <h2 className="card-title">Select a track</h2>
-  <p>Click to load</p>
+  <p className='text-xs '>Click any track below to load</p>
     
                 
     <div className="card-actions justify-end">
