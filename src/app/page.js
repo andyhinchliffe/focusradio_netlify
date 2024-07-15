@@ -253,13 +253,13 @@ export default function Home() {
   
 
 <div className="flex flex-wrap  md:columns-2 ">
-<div className='hidden lg:block'>
+<div className='hidden w-32 lg:block'>
 
 
 
 
 <div class="flex h-screen flex-col justify-between  bg-slate-900">
-  <div class="px-4 py-6">
+  <div class="px-2 py-6">
     
 
     <ul class="mt-6 space-y-1">
